@@ -327,9 +327,36 @@ for different State–District combinations.
 
 ---
 
+## ⚠️ Model Training Approach
+
+The complete crop dataset contains approximately **340,000+ records**.
+
+Training Machine Learning models on the full dataset using Random Forest algorithms requires significant computational resources and execution time in Google Colab.
+
+Therefore, for model experimentation, comparison, and forecasting, a representative sample of the dataset was used during training.
+
+### Reason for Sampling
+
+- Faster model training
+- Reduced memory consumption
+- Faster experimentation and evaluation
+- Suitable for comparing models with and without rainfall features
+
+### Future Improvement
+
+For production deployment, the models can be trained on the complete dataset using:
+
+- High-performance computing resources
+- Google Colab Pro
+- Cloud platforms such as AWS, Azure, or Google Cloud
+- Distributed Big Data frameworks such as Spark MLlib
+
+This project demonstrates the complete end-to-end Machine Learning workflow while using sampled data for efficient model development.
+
+
 ## 👨‍💻 Author
 
-Samesh Kumar
+Suriyan K
 
 Advanced Data Science & AI
 
